@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+mvn package -DskipTests
+
+pushd target
+
+cp flink-connector-dynamodb-4.4-SNAPSHOT.jar /Users/maoxd/code/realtime-data-warehouse/libs/
+
+cp flink-connector-dynamodb-4.4-SNAPSHOT-sources.jar /Users/maoxd/code/realtime-data-warehouse/libs/
+
+popd
